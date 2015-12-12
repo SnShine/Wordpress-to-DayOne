@@ -1,8 +1,5 @@
 import os 
 
-
-#os.system('dayone -d="2013-08-05 18:46:22" new<test.txt')
-
 def parseData():
     input_file= open("personal_data.xml", "r")
     content= input_file.read()
@@ -22,16 +19,16 @@ def parseData():
             #print(file_content)
 
             title= file_content[file_content.index("<title>")+7 : file_content.index("</title>")]
-            #print(title)
+            print(title)
 
             file_content= file_content[file_content.index("</title>"):]
             text= file_content[file_content.index("<content:encoded>")+26 : file_content.index("</content:encoded>")-3]
             text= text.replace("#", "")
-            print(text)
+            #print(text)
 
             file_content= file_content[file_content.index("</content:encoded>"):]
             dateTime= file_content[file_content.index("<wp:post_date_gmt>")+18 : file_content.index("</wp:post_date_gmt>")]
-            print(dateTime+ "\n")
+            #print(dateTime+ "\n")
 
             file_content= file_content[file_content.index("</wp:post_date_gmt>"):]
 
@@ -57,7 +54,7 @@ def parseData():
 
 
             content= content[content.index("</item>")+5:]
-            print("\n\n\n..................\n\n\n")
+            print("\n..................\n")
         else:
             output_date_file.close()
             print(file_count)
@@ -74,7 +71,7 @@ def makeDayOneEntries():
     for i in range(len(entries)):
         dateTime= input_date_file.readline()
         dateTime= dateTime[:-1]
-        print(dateTime)
+        #print(dateTime)
 
         #print('dayone -d="'+ dateTime+ '" new<files/'+ str(i+1)+ '.txt')
         os.system('dayone -d="'+ dateTime+ '" new<files/'+ str(i+1)+ '.txt')
@@ -82,5 +79,5 @@ def makeDayOneEntries():
 
 if __name__== "__main__":
     parseData()
-    #makeDayOneEntries()
+    makeDayOneEntries()
 
