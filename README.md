@@ -16,6 +16,6 @@ You need to have python2 installed to run the script and it works flawlessly on 
 2. Create a folder named `files` in the same folder as `main.py`.
 3. Run the file as `$ python main.py`
 
-<b>BAM!</b> All of your wordpress entries are imported to DayOne.
+<b>BOOM!</b> All of your wordpress entries are imported to DayOne.
 
-Now, in DayOne `Preferences > Advanced` click `Convert all hashtags to Native tags` and <b>BOOM!</b> all your imported entries will be tagged with the same tags as in wordPress journal.
+Now, in DayOne `Preferences > Advanced` click `Convert all hashtags to Native tags` and <b>BAM!</b> all your imported entries will be tagged with the same tags as in wordPress journal.
