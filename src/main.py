@@ -1,4 +1,4 @@
-import os 
+import os
 
 def parseData():
     input_file= open("personal_data.xml", "r")
@@ -13,7 +13,7 @@ def parseData():
             file_count+= 1
             output_text_file= open("files/"+ str(file_count)+ ".txt", "w")
             print(file_count)
-            
+
             #print(len(content))
             file_content= content[content.index("<item>"):content.index("</item>")]
             #print(file_content)
