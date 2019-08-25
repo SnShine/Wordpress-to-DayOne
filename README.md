@@ -2,7 +2,7 @@
 
 This `main.py` script parses wordpress journal entries and creates [Day One](http://dayoneapp.com) entries in your DayOne app. This script imports Title, Date & Time, Text, and Tags from wordpress entries.
 
-You need to have python2 installed to run the script and it works flawlessly on Mac OSX with latest version of DayOne app and its [command line tools](http://dayoneapp.com/downloads/dayone-cli.pkg) installed.
+You need to have python2 installed to run the script and it works flawlessly on Mac OSX with latest version of DayOne app and its [command line tools](https://help.dayoneapp.com/en/articles/435871-command-line-interface-cli) installed.
 
 ### Download WordPress posts as an XML file
 
