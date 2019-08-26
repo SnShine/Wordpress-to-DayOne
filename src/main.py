@@ -73,8 +73,8 @@ def makeDayOneEntries():
         dateTime= dateTime[:-1]
         #print(dateTime)
 
-        #print('dayone -d="'+ dateTime+ '" new<files/'+ str(i+1)+ '.txt')
-        os.system('dayone -d="'+ dateTime+ '" new<files/'+ str(i+1)+ '.txt')
+        #print('dayone2 -d="'+ dateTime+ '" new<files/'+ str(i+1)+ '.txt')
+        os.system('dayone2 -d="'+ dateTime+ '" new<files/'+ str(i+1)+ '.txt')
 
 
 if __name__== "__main__":
